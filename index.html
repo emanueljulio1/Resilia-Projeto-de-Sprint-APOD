@@ -1,0 +1,213 @@
+<!--
+
+    LEGENDAS DAS VARIÁVEIS        : 
+    b                             = botão;
+    c                             = container;
+    ct                            = conteúdo;
+    d                             = data;
+    di                            = data do input;
+    e                             = explanação;
+    f                             = rodapé;
+    s                             = começar;
+    r                             = resposta;
+    m                             = mostrar;
+    
+
+
+-->
+<!DOCTYPE html>
+<html lang                        = "en">
+
+<head>
+    <meta http-equiv              = "X-UA-Compatible" content="IE=edge">
+    <meta name                    = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>O espaço hoje</title>
+    <style>
+        *,
+        html {
+            margin                : 0;
+            padding               : 0;
+            color                 : white;
+            font-family           : 'Tahoma', sans-serif;
+            font-size             : 20px;
+        }
+
+
+        main {
+            height                : calc(90vh - 40px);
+        }
+
+        .c {
+            height                : 90vh;
+            background-repeat     : no-repeat;
+            background-size       : cover;
+            background-position   : center;
+
+        }
+
+        .d {
+            align-items           : center;
+            display               : flex;
+            flex-direction        : column;
+
+        }
+
+        footer {
+                
+                height            : 3vh;
+                color             : black;
+                text-align        : center;
+                padding-top       : 1px;
+                filter            : drop-shadow(4px 4px 6px black);
+            }
+        
+        footer a {
+                color             : white;
+            }
+
+        button{
+            margin                : 10px;
+            padding               : 1px;
+            border-radius         : 5px;
+            font-size             : 14px;
+            transition            : 1s all;
+        }
+
+        input {
+            padding               : 1px;
+            border-radius         : 5px;
+            font-size             : 14px;
+            transition            : 1s all;
+        }
+
+        button:hover {
+            background-color      : rgba(70, 51, 46, 0.534);
+        }
+
+        iframe {
+            object-fit            : cover;
+            width                 : calc(90vw - 15px);
+            height                : calc(90vh - 15px);
+            position              : fixed;
+            top                   : 10px;
+            left                  : 10px;
+            border                : none;
+
+        }
+
+        #t {
+            text-align            : center;
+            color                 : FFFFFF;
+            font-family           : 'Tahoma', sans-serif;
+
+        }
+
+        .ct,
+        .d {
+            position              : relative;
+        }
+
+        .ct {
+            box-sizing            : border-box;
+            background-color      : rgba(70, 51, 46, 0.534);
+            height                : fit-content;
+            border-radius         : 5px;
+            top                   : 30px;
+            left                  : 20vw;
+            width                 : 55vw;
+            padding               : 15px;
+            color                 : rgb(29, 29, 29);
+            cursor                : default;
+        
+        }
+
+        .ct:single-button {
+            cursor                : move;
+        }
+
+        .f {
+            font-size             : 10px;
+            margin-top            : 70px;
+            margin-bottom         : 30px;
+            display               : flex;
+            justify-content       : center;
+
+        }
+
+        #e {
+            margin-top            : 20px;
+            text-decoration-color : white;
+        }
+
+
+
+        h1,
+        h3 {
+
+            font-size             : larger;
+            font-weight           : bold;
+        }
+
+        /* -----------------------------------*/
+        /* ---------->>> media query <<<-----------*/
+        /* -----------------------------------*/
+
+        @media screen and (max-width: 700px) {
+
+            .d {
+                flex-direction    : row;
+                justify-content   : center;
+                top               : 20px;
+            }
+
+            .ct {
+                width             : 90vw;
+                left              : 5vw;
+            }
+
+            #e {
+                font-size         : 16px;
+            }
+
+        }
+
+        .ui-accordion-content-active {
+
+            padding               : 10px;
+
+        }
+    </style>
+</head>
+
+<body class                       = "c">
+    <main>
+        <iframe src               = ""></iframe>
+        <div class                = "d">
+            <input style          = "color: black;" type="date" id="di">
+            <button style         = "color: black;" onclick="s()">Pesquisar
+            </button>
+
+        </div>
+
+        <div class                = "ct">
+            <h1 id                = "t"> </h1>
+
+            <div id               = "e"></div>
+
+
+
+
+
+    </main>
+    <footer class                 = "f"><h6><em style="color: #73B782; font-family: 'Tahoma';font-size: 13px;" >© 2021 - Todos os Direitos Reservados, adaptado por <a style="font-size: 14px;" href="https://www.linkedin.com/in/emanuel-melo-b7285810b
+                                        ">  Emanuel Melo</a></em></h6>
+
+    </footer>
+
+    <script src                   = "https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src                   = "https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src                   = "./js/principal.js"></script>
+    <script src                   = "./js/us.js"></script>
+</body>
+
+</html>
